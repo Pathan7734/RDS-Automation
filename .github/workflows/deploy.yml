@@ -1,3 +1,11 @@
+name: Deploy RDS with Terraform
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:   # allows manual trigger from GitHub UI
+
 jobs:
   terraform:
     runs-on: ubuntu-latest
