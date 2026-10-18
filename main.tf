@@ -8,7 +8,7 @@ resource "aws_db_instance" "demo_rds" {
   engine               = "postgres"
   engine_version       = "15.18"   # ✅ valid version
   instance_class       = "db.t3.micro"
-  username             = "admin"
+  username             = "apadmin"
   password             = "SuperSecurePass123!"
   skip_final_snapshot  = true
   publicly_accessible  = true
